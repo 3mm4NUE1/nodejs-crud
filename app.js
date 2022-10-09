@@ -7,12 +7,14 @@ import {
     PORT
 } from '/config.js'
 
-const express=require('express');
-const mysql=require('mysql2');
+import { createConnection } from 'mysql2';
+
+import express from 'express';
+
 var bodyParser=require('body-parser');
 var app=express();
 
-var con=mysql.createConnection({
+var con= createConnection({
     host: DB_HOST,
     user: DB_USER,
     password: DB_PASSWORD,

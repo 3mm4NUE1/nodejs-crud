@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD Node</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Ingresar Datos</h1>
+        <br><br>
+        <a href="/getUsers"><button>Consultar Usuarios</button></a>
+        <form action="/addUser" method="post">         
+            <table class="tform">
+                <tr>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="Nombre: "></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="apellido" id="apellido" placeholder="Apellido: "></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="cancion" id="cancion" placeholder="Cancion Favorita:"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="enviar" id="enviar" value="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="form-eliminar">
+        <h1>Borrar</h1>
+        <form action="delUser" method="post">
+            <table class="tform1">
+                <tr>
+                    <td><input type="text" name="nombreBorrar" id="nombreBorrar" placeholder="Nombre a Eliminar"></td>
+                    <td><input type="submit" value="Borrar Usuario"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="form-editar">
+        <h1>Ingresar Datos</h1>
+        <form action="updUser" method="post">
+            <table class="tform2">
+                <tr>
+                    <td><input type="text" name="nombreEdit" id="nombreEdit" placeholder="Nombre a Editar"></td>
+                    <td><input type="text" name="nombreEditado" id="nombreEditado" placeholder="Nuevo Nombre"></td>
+                    <td><input type="submit" value="Editar Datos"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

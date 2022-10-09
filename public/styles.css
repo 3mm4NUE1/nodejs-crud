@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body{
+    background-color: bisque;
+}
+
+.form{    
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 0.5rem;
+    background-color: rgb(228, 191, 113);
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.tform{
+    margin-top: 3%;
+    font-size: x-large;
+    display: inline-table;
+    border-spacing: 1rem 1rem;
+    margin-left: 1rem;
+}
+
+.form-eliminar{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 0.5rem;
+    background-color: rgb(228, 191, 113);
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.tform1{
+    margin-top: 3%;
+    font-size: x-large;
+    display: inline-table;
+    border-spacing: 1rem 1rem;
+    margin-left: 1rem;
+}
+
+.form-editar{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 0.5rem;
+    background-color: rgb(228, 191, 113);
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.tform2{
+    margin-top: 3%;
+    font-size: x-large;
+    display: inline-table;
+    border-spacing: 1rem 1rem;
+    margin-left: 1rem;
+}
+
+.btn1{
+    
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}

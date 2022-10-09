@@ -9,7 +9,6 @@
   "name": "crudnode",
   "version": "1.0.0",
   "main": "app.js",
-  "type": "module",
   "devDependencies": {},
   "scripts": {
     "start": "nodemon app.js",

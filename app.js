@@ -1,27 +1,16 @@
-import {
-    DB_HOST,
-    DB_USER,
-    DB_PASSWORD,
-    DB_NAME,
-    DB_PORT,
-    PORT
-} from '/config.js'
 
-import { createConnection } from 'mysql2';
 
-import express from 'express';
-
-import bodyParser from 'body-parser';
-
-var bodyParser=bodyParser()
+const express=require('express');
+const mysql=require('mysql2');
+var bodyParser=require('body-parser');
 var app=express();
 
-var con= createConnection({
-    host: DB_HOST,
-    user: DB_USER,
-    password: DB_PASSWORD,
-    port: DB_PORT,
-    database:DB_NAME
+var con=mysql.createConnection({
+    host:DB_HOST,
+    user:DB_USER,
+    password:DB_PASSWORD,
+    port:DB_PORT,
+    database:DB_NAME,
 
 })
 

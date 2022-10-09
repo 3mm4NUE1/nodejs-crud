@@ -11,7 +11,9 @@ import { createConnection } from 'mysql2';
 
 import express from 'express';
 
-var bodyParser=require('body-parser');
+import bodyParser from 'body-parser';
+
+var bodyParser=bodyParser()
 var app=express();
 
 var con= createConnection({
